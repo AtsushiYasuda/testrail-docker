@@ -42,22 +42,5 @@ networks:
 
 volumes:
   testrail_opt:
-    driver: local
-    driver_opts:
-      type: none
-      device: "$PWD/${OPT_PATH:-_opt}"
-      o: bind
-
   testrail_mysql:
-    driver: local
-    driver_opts:
-      type: none
-      device: "$PWD/${MYSQL_PATH:-_mysql}"
-      o: bind
-
   testrail_config:
-    driver: local
-    driver_opts:
-      type: none
-      device: "$PWD/${CONFIG_PATH:-_config}"
-      o: bind
